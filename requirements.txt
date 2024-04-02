@@ -1,0 +1,7 @@
+torch==2.0.1
+transformers==4.39.2
+accelerate==0.28.0 
+peft==0.10.0
+tqdm==4.66.2
+trl==0.8.1
+deepspeed
