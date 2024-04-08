@@ -2,10 +2,10 @@
 
 BASE_DIR=${BASE_DIR:-/data/home/zfyang/home/oishi}
 
-MODEL=${BASE_DIR}${MODEL:-/model/llemma-7b}
+MODEL=${BASE_DIR}${MODEL:-/model/llemma_7b}
 CONFIG=${BASE_DIR}${CONFIG:-/llemma-ft/ds_config.json}
 OUTDIR=${BASE_DIR}${OUTDIR:-/model/llemma-7b-v1}
-DATADIR=${BASE_DIR}${DATADIR:-/llemma-ft/data/random/train_alpaca.json}
+DATADIR=${BASE_DIR}${DATADIR:-/llemma-ft/data/theorem/random/train_alpaca.json}
 
 
 deepspeed --include localhost:0 ${BASE_DIR}/llemma-ft/sft.py \
@@ -13,7 +13,6 @@ deepspeed --include localhost:0 ${BASE_DIR}/llemma-ft/sft.py \
     --model_name_or_path $MODEL \
     --dataset_path $DATADIR \
     --use_lora \
-    --lora_target q_proj,v_proj \
     --lora_rank 8 \
     --lora_alpha 16 \
     --lora_dropout 0.1 \

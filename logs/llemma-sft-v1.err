@@ -1,0 +1,107 @@
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "/data/home/zfyang/home/oishi/llemma-ft/sft.py", line 303, in <module>
+    train()
+  File "/data/home/zfyang/home/oishi/llemma-ft/sft.py", line 233, in train
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/hf_argparser.py", line 338, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 126, in __init__
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/training_args.py", line 1551, in __post_init__
+    and (self.device.type != "cuda")
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/training_args.py", line 2027, in device
+    return self._setup_devices
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/utils/generic.py", line 63, in __get__
+    cached = self.fget(obj)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/training_args.py", line 1959, in _setup_devices
+    self.distributed_state = PartialState(timeout=timedelta(seconds=self.ddp_timeout))
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/accelerate/state.py", line 194, in __init__
+    dist.init_distributed(dist_backend=self.backend, auto_mpi_discovery=False, **kwargs)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/deepspeed/comm/comm.py", line 670, in init_distributed
+    cdb = TorchBackend(dist_backend, timeout, init_method, rank, world_size)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/deepspeed/comm/torch.py", line 121, in __init__
+    self.init_process_group(backend, timeout, init_method, rank, world_size)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/deepspeed/comm/torch.py", line 149, in init_process_group
+    torch.distributed.init_process_group(backend,
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 86, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1184, in init_process_group
+    default_pg, _ = _new_process_group_helper(
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1339, in _new_process_group_helper
+    backend_class = ProcessGroupNCCL(
+ValueError: ProcessGroupNCCL is only supported with GPUs, no GPUs found!
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+Traceback (most recent call last):
+  File "/data/home/zfyang/home/oishi/llemma-ft/sft.py", line 303, in <module>
+    train()
+  File "/data/home/zfyang/home/oishi/llemma-ft/sft.py", line 233, in train
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/hf_argparser.py", line 347, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['--use_lora', '--lora_target', 'q_proj,v_proj', '--lora_rank', '8', '--lora_alpha', '16', '--lora_dropout', '0.1']
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+Traceback (most recent call last):
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 111, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 159, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/home/zfyang/home/oishi/model/llemma-7b'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/home/zfyang/home/oishi/llemma-ft/sft.py", line 303, in <module>
+    train()
+  File "/data/home/zfyang/home/oishi/llemma-ft/sft.py", line 236, in train
+    model = transformers.AutoModelForCausalLM.from_pretrained(model_args.model_name_or_path)
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 484, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/home/zfyang/environment/anaconda3/envs/llm-ft/lib/python3.10/site-packages/transformers/utils/hub.py", line 462, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: '/data/home/zfyang/home/oishi/model/llemma-7b'. Please provide either the path to a local folder or the repo_id of a model on the Hub.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.
+ERROR: ld.so: object '/lib64/libcolord-gtk.so' from LD_PRELOAD cannot be preloaded: ignored.

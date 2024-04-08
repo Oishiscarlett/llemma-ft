@@ -56,7 +56,7 @@ class SupervisedDataset(Dataset):
     def __init__(self, data_args, tokenizer: transformers.PreTrainedTokenizer):
         super(SupervisedDataset, self).__init__()    
         logging.warning("Loading data...")
-        data_path = data_args.data_path
+        data_path = data_args.dataset_path
         try:
             list_data_dict = json.load(open(data_path, 'r'))
         except BaseException:
@@ -67,7 +67,7 @@ class SupervisedDataset(Dataset):
         list_data_dict = random.sample(list_data_dict, len(list_data_dict))
 
         # 初步处理数据
-        prompt_input, prompt_no_input = PROMPT_DICT["prompt_input", "prompt_no_input"]
+        prompt_input, prompt_no_input = PROMPT_DICT["prompt_input"], PROMPT_DICT["prompt_no_input"]
         
         sources = [
             prompt_input.format_map(example) if example.get("input", "") != "" else prompt_no_input.format_map(example)
